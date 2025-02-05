@@ -1,0 +1,18 @@
+/* body{
+    background-image: url(images/pic.jpeg);
+    background-repeat:no-repeat;
+
+    background: no-repeat url(images/pic.jpeg) 10px 20px/400px 300px
+} */
+
+main{
+    font-family:Baskerville, Tahoma, sans-serif;
+    border: 1px solid black
+}
+
+section{
+    font-size: 75%;
+    line-height: 1.6em;
+    text-align: center;
+    text-indent: 1em;
+}
