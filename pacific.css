@@ -1,7 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
-    background: color #90c7e3;
-    background-image: linear-gradient(#90c7e3, #FFFFFF);
-    background-repeat: no-repeat;
+    background-color: #88d8ed;
     color:#666666;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
@@ -9,31 +11,63 @@ body {
 
 header {
     background-color:#000033;
-    background-image: url(images/sunset.jpg);
     background-position: right;
     background-repeat: no-repeat;
     line-height: 400%;
     text-indent: 1.0em;
     color:#FFFFFF;
-    height: 60px;
-    padding-top: 15px;
+    height: 120px;
+    padding-top: 30px;
+    padding-left: 3em;
     text-align: center;
 }
 
 h1{
     margin-top: 0px;
     margin-bottom:0px;
+    font-size: 3em;
+    letter-spacing: 0.25em;
 }
 
 nav {
-    background-color:#FFFFFF;
     font-weight: bold;
-    padding: 10px;
-    text-align: center;
+    padding: 1.5em;
+    font-size: 120%;
+    width: 30%;
+}
+
+nav ul{
+    list-style-type: none;
+    font-size: 1.2em;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+nav a:link {
+    color: #5c7fa3;
+}
+
+nav a:visited{
+    color: #344873;
+}
+
+nav a:hover{
+    color: #a52a2a;
 }
 
 main{
     padding: 1px 20px 20px 20px;
+    width: 70%;
+    background-color: #ffffff;
+}
+
+nav,main{
+    display: inline-block;
+    vertical-align: top;
+}
+
+main ul{
+    list-style-image: url(images/marker.gif);
 }
 
 h1,h2,h2{
@@ -51,6 +85,7 @@ h2{
 footer{
     font-size: 75%;
     padding: 20px;
+    background-color: #ffffff;
 }
 
 table, td, th{
@@ -93,7 +128,8 @@ input,textarea{
 
 #wrapper{
     width: 80%;
-    background-color: #FFFFFF;
+    background-color: #90c7e3;
+    background-image: linear-gradient(#90c7e3, #ffffff);
     min-width: 960 px;
     max-width: 1024 px;
     box-shadow: 3px 3px #333333;
