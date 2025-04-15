@@ -1,75 +1,81 @@
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 body {
-    background-color: #88d8ed;
+    background-color:#88D8ED;
     color:#666666;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    height:100vh;
 }
 
 header {
     background-color:#000033;
     background-position: right;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     color:#FFFFFF;
-    height: 120px;
-    padding-top: 30px;
-    padding-left: 3em;
-    text-align: center;
+    height:120px;
+    padding-top:30px;
+    padding-left:3em;
+    text-align:center;
 }
 
 h1{
-    margin-top: 0px;
+    margin-top:0px;
     margin-bottom:0px;
-    font-size: 3em;
-    letter-spacing: 0.25em;
+    font-size:3em;
+    letter-spacing:0.25em;
 }
 
 nav {
-    font-weight: bold;
-    padding: 1.5em;
-    font-size: 120%;
-    width: 30%;
+    font-weight:bold;
+    padding:1.5em;
+    font-size:120%;
+    width:30%;
 }
 
 nav ul{
     list-style-type: none;
-    font-size: 1.2em;
-    margin: 0px;
-    padding-left: 0px;
+    font-size:1.2em;
+    margin:0px;
+    padding-left:0px;
+}
+
+nav a {
+    transition-duration: 3s;
+    transition-property: color;
+    transition-timing-function: ease-out;
 }
 
 nav a:link {
-    color: #5C7FA3;
+    color:#5C7FA3;
 }
 
 nav a:visited{
-    color: #344873;
+    color:#344873;
 }
 
 nav a:hover{
-    color: #A52A2A;
+    color:#A52A2A;
 }
 
 main{
-    padding: 1px 20px 20px 20px;
-    width: 70%;
-    background-color: #ffffff;
+    padding:1px 20px 20px 20px;
+    width:70%;
+    background-color:#FFFFFF;
 }
 
 nav,main{
-    display: inline-block;
-    vertical-align: top;
+    display:inline-block;
+    vertical-align:top;
 }
 
-main ul{
+main ul {
     list-style-image: url(images/marker.gif);
 }
 
-h1,h2,h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h1,h2,h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 h2,h3{
@@ -81,22 +87,22 @@ h2{
 }
 
 footer{
-    font-size: 75%;
-    padding: 20px;
-    background-color: #ffffff;
+    font-size:75%;
+    padding:20px;
+    background-color:#FFFFFF;
 }
 
 table, td, th{
-    border: 2px solid #3399CC;
-    border-collapse: collapse;
+    border:2px solid #3399CC;
+    border-collapse:collapse;
 }
 
-td, th{
-    padding: 0.5em;
+td,th{
+    padding:0.5em;
 }
 
 td{
-    text-align: center;
+    text-align:center;
 }
 
 tbody > tr:nth-of-type(odd) {
@@ -104,139 +110,156 @@ tbody > tr:nth-of-type(odd) {
 }
 
 label,textarea{
-    display: block;
+    display:block;
 }
 
 input,textarea{
-    margin-bottom: 1.5em;
+    margin-bottom:1.5em;
 }
 
-.resort{
+video{
+    float:right;
+    padding-left:20px;
+}
+
+.resort {
     color:#5C7FA3;
-    font-weight: bold;
+    font-weight:bold;
 }
 
-.left{
-    text-align: left;
+.left {
+    text-align:left;
 }
 
-#contact{
-    font-size: 90%;
+#contact {
+    font-size:90%;
 }
 
-#wrapper{
+#wrapper {
     width: 80%;
-    background-color: #90c7e3;
-    background-image: linear-gradient(#90c7e3, #ffffff);
-    min-width: 960px;
-    max-width: 1024px;
+    background-color: #90C7E3;
+    background-image: linear-gradient(#90C7E3,#FFFFFF);
+    min-width:960px;
+    max-width:1024px;
     box-shadow: 3px 3px #333333;
 }
 
 #homehero{
-    height: 300px;
+    height:300px;
     background-image: url(images/coast.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:100%;
 }
 
 #yurthero{
-    height: 300px;
+    height:300px;
     background-image: url(images/yurt.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:100%;
 }
 
 #trailhero{
-    height: 300px;
+    height:300px;
     background-image: url(images/trail.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size:100%;
 }
 
 #desktop{
-    display: inline;
+    display:inline;
 }
 
 #mobile{
-    display: none;
+    display:none;
 }
 
-@media only screen and (max-width: 1024px){
+#thumbnails{
+    display:flex;
+    justify-content:space-around;
+}
+
+#bigImage{
+    display:block;
+    margin:auto;
+    margin-top:20px;
+}
+
+
+@media only screen and (max-width:1024px) {
     body{
-        margin: 0px;
+        margin:0px;
         background-color: #FFFFFF;
     }
 
     #wrapper{
-        min-width: 0px;
-        width: auto;
+        min-width:0px;
+        width:auto;
         box-shadow: none;
         border: none;
     }
 
     header{
-        padding: 0.5em 0em;
+        padding:0.5em 0em;
     }
 
     h1{
-        letter-spacing: 0.1em;
+        letter-spacing:0.1em;
     }
-
     nav,main{
-        display: block;
-        width: auto;
+        display:block;
+        width:auto;
     }
-
     nav{
         text-align: center;
-        padding: 0.5em;
+        padding:0.5em;
     }
-
     nav li{
-        display: inline;
-        padding: 0.25em 0.75em;
+        display:inline;
+        padding:0.25em 0.75em;
     }
-
-    #homehero, #yurthero, #trailhero{
-        height: 200px;
+    #homehero,#yurthero,#trailhero{
+        height:200px;
     }
 }
 
-@media only screen and (max-width:600px){
-
+@media only screen and (max-width:600px) {
     main{
         padding:0.1em 1em;
-        font-size: 90%;
+        font-size:90%;
     }
-
     h1{
-        font-size: 2em;
+        font-size:2em;
     }
-
     nav{
-        padding: 0px;
+        padding:0px;
     }
-
     nav li{
         display: block;
-        margin: 0px;
-        border-bottom: 2px solid #330000;
+        margin:0px;
+        border-bottom:2px solid #330000;
     }
-
     nav a{
-        display: block;
+        display:block;
     }
-
-    #homehero, #yurthero, #trailhero{
-        display: none;
+    video{
+        float:none;
+        padding-left:0px;
+        display:block;
+        margin:auto;
     }
-
+    #homehero,#yurthero,#trailhero{
+        display:none;
+    }
     #desktop{
-        display: none;
+        display:none;
     }
-
     #mobile{
-        display: inline;
+        display:inline;
+    }
+    #thumbnails{
+        display:none;
+    }
+    #bigImage{
+        display:none;
     }
 }
